@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADHD - فرط الحركة وتشتت الانتباه</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      background-color: #ddd;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    nav a:hover {
+      color: #4a90e2;
+        text-decoration: none;
+    }
+
+    nav button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 1.5rem;
+      line-height: 1.8;
+    }
+
+    h2 {
+      color: #4a90e2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #3b7db3;
+      margin-top: 20px;
+    }
+
+    .rtl {
+      direction: rtl;
+      text-align: right;
+    }
+
+    a {
+      color: #0077cc;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #357ab8;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      section {
+        padding: 1rem;
+      }
+    }
+    
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="title">ADHD - Attention Deficit Hyperactivity Disorder</h1>
+  </header>
+
+  <nav>
+    <div>
+      <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About ADHD</a>
+        <a href="to-do%20list.html">To-Do List</a>
+    </div>
+    <div>
+      <button onclick="switchLanguage('en')">English</button>
+      <button onclick="switchLanguage('ar')">عربي</button>
+    </div>
+  </nav>
+
+ <section id="content" class="en">
+  <h2>What is ADHD?</h2>
+  <p>ADHD (Attention Deficit Hyperactivity Disorder) is a common neurodevelopmental disorder that affects both children and adults. It is characterized by difficulties with attention, hyperactivity, and impulsive behavior. ADHD can impact academic performance, social interactions, and self-esteem.</p>
+
+  <h2>Types of ADHD</h2>
+  <ul>
+    <li><strong>Predominantly Inattentive Type:</strong> Mainly difficulty focusing, organizing, and following instructions.</li>
+    <li><strong>Predominantly Hyperactive-Impulsive Type:</strong> Excessive movement and impulsive decisions without thinking.</li>
+    <li><strong>Combined Type:</strong> A mix of inattentive and hyperactive-impulsive symptoms.</li>
+  </ul>
+
+  <h2>Symptoms</h2>
+  <h3>Inattention:</h3>
+  <ul>
+    <li>Forgetfulness and losing things frequently</li>
+    <li>Difficulty sustaining attention in tasks or play</li>
+    <li>Frequently making careless mistakes in schoolwork</li>
+  </ul>
+
+  <h3>Hyperactivity:</h3>
+  <ul>
+    <li>Fidgeting, squirming in seat</li>
+    <li>Running or climbing in inappropriate situations</li>
+    <li>Talking excessively and interrupting others</li>
+  </ul>
+
+  <h3>Impulsivity:</h3>
+  <ul>
+    <li>Blurting out answers</li>
+    <li>Difficulty waiting for one’s turn</li>
+    <li>Interrupting conversations or activities</li>
+  </ul>
+
+  <h2>Causes and Risk Factors</h2>
+  <p>The exact cause of ADHD is still unknown, but research suggests that it's a combination of:</p>
+  <ul>
+    <li><strong>Genetics:</strong> ADHD tends to run in families.</li>
+    <li><strong>Brain Structure and Function:</strong> Differences in certain brain regions and neurotransmitters.</li>
+    <li><strong>Environmental Factors:</strong> Exposure to toxins during pregnancy (like tobacco or alcohol), low birth weight, or premature birth.</li>
+  </ul>
+
+  <h2>Impact on Daily Life</h2>
+  <p>ADHD affects various aspects of daily life including school, work, and relationships. Children may struggle in class, while adults may find it difficult to stay organized or meet deadlines. Emotional regulation and time management are also common challenges.</p>
+
+  <h2>Diagnosis</h2>
+  <p>There is no single test to diagnose ADHD. Diagnosis involves:</p>
+  <ul>
+    <li>Detailed history from parents, teachers, and the individual</li>
+    <li>Behavioral observations over at least six months</li>
+    <li>Psychological evaluations, if needed</li>
+  </ul>
+
+  <h2>Treatment Options</h2>
+  <h3>1. Medication:</h3>
+  <ul>
+    <li>Stimulants like Ritalin or Adderall (under medical supervision)</li>
+    <li>Non-stimulant medications if stimulants are not effective</li>
+  </ul>
+
+  <h3>2. Behavioral Therapy:</h3>
+  <ul>
+    <li>Helps develop routines and structure</li>
+    <li>Teaches skills to manage behavior and emotions</li>
+    <li>Involves parents, teachers, and caregivers</li>
+  </ul>
+
+  <h3>3. Educational Support:</h3>
+  <ul>
+    <li>Special accommodations in schools (e.g., extra time on tests)</li>
+    <li>Individualized Education Plans (IEPs)</li>
+    <li>One-on-one tutoring or resource rooms</li>
+  </ul>
+
+  <h2>Tips for Parents and Teachers</h2>
+  <ul>
+    <li>Be patient and avoid punishment-based strategies</li>
+    <li>Create clear routines and stick to them</li>
+    <li>Use reward systems and positive reinforcement</li>
+    <li>Break tasks into small, manageable steps</li>
+    <li>Encourage physical activity and creative outlets</li>
+  </ul>
+
+  <h2>Success Stories</h2>
+  <p>Many successful people have ADHD and have used their creativity and energy to their advantage. Examples include:</p>
+  <ul>
+    <li>Thomas Edison – Inventor</li>
+    <li>Michael Phelps – Olympic swimmer</li>
+    <li>Jim Carrey – Actor and comedian</li>
+  </ul>
+
+  <h2>Useful Resources</h2>
+  <ul>
+    <li><a href="https://www.cdc.gov/ncbddd/adhd/index.html" target="_blank">CDC – ADHD Information</a></li>
+    <li><a href="https://www.chadd.org/" target="_blank">CHADD – Support and Advocacy</a></li>
+    <li><a href="https://www.who.int/" target="_blank">World Health Organization (WHO)</a></li>
+  </ul>
+</section>
+
+
+  <section id="content-ar" class="rtl" style="display:none;">
+    <h2>ما هو اضطراب فرط الحركة وتشتت الانتباه (ADHD)؟</h2>
+    <p>يُعد ADHD أحد أكثر الاضطرابات العصبية شيوعًا بين الأطفال، لكنه لا يقتصر عليهم فقط، فقد يستمر حتى مرحلة البلوغ. يتميز بثلاث سمات رئيسية: تشتت الانتباه، فرط الحركة، والاندفاعية. المصابون غالبًا ما يعانون من صعوبة في التركيز، التنظيم، والبقاء في مكان واحد لفترة طويلة.</p>
+
+    <h2>أنواع اضطراب ADHD</h2>
+    <ul>
+      <li><strong>النوع الأول:</strong> تشتت الانتباه فقط</li>
+      <li><strong>النوع الثاني:</strong> فرط الحركة والاندفاع فقط</li>
+      <li><strong>النوع الثالث:</strong> مشترك (تشتت + فرط حركة)</li>
+    </ul>
+
+    <h2>الأعراض حسب النوع</h2>
+    <h3>تشتت الانتباه:</h3>
+    <ul>
+      <li>نسيان الواجبات المدرسية</li>
+      <li>عدم الانتباه للتفاصيل</li>
+      <li>سهولة التشتت بالمؤثرات الخارجية</li>
+    </ul>
+
+    <h3>فرط الحركة:</h3>
+    <ul>
+      <li>كثرة الحركة والكلام</li>
+      <li>عدم القدرة على الجلوس لفترات طويلة</li>
+      <li>الركض أو القفز في أوقات غير مناسبة</li>
+    </ul>
+
+    <h3>الاندفاعية:</h3>
+    <ul>
+      <li>مقاطعة الآخرين باستمرار</li>
+      <li>عدم الانتظار في الطابور</li>
+      <li>اتخاذ قرارات سريعة دون تفكير</li>
+    </ul>
+
+    <h2>الأسباب والعوامل المؤثرة</h2>
+    <p>لا يوجد سبب واحد مباشر لـ ADHD، ولكن من أبرز العوامل:</p>
+    <ul>
+      <li>العوامل الوراثية: إذا كان أحد الوالدين يعاني من ADHD، ففرصة الإصابة تزيد.</li>
+      <li>تغيرات في كيمياء الدماغ أو تطوره.</li>
+      <li>تعرض الجنين للمواد السامة أثناء الحمل (مثل التدخين أو الكحول).</li>
+      <li>الولادة المبكرة أو انخفاض الوزن عند الولادة.</li>
+    </ul>
+
+    <h2>التأثير على الحياة اليومية</h2>
+    <p>يمكن أن يؤثر ADHD على العلاقات الاجتماعية، الأداء الدراسي، والثقة بالنفس. في الكبار، قد يؤثر على العمل والزواج والقدرة على التنظيم.</p>
+
+    <h2>طرق التشخيص</h2>
+    <p>لا يوجد اختبار محدد لـ ADHD، لكن يتم التشخيص من خلال:</p>
+    <ul>
+      <li>ملاحظة السلوك لمدة 6 أشهر على الأقل</li>
+      <li>تقييم من طبيب نفسي أو أخصائي</li>
+      <li>مشاركة الأهل والمعلمين في التقييم</li>
+    </ul>
+
+    <h2>طرق العلاج</h2>
+    <h3>1. العلاج الدوائي:</h3>
+    <ul>
+      <li>مثل: ريتالين، أديرال (تحت إشراف طبي فقط)</li>
+    </ul>
+
+    <h3>2. العلاج السلوكي:</h3>
+    <ul>
+      <li>تعليم الطفل مهارات التنظيم</li>
+      <li>تعديل السلوك بالمكافآت والعقوبات الإيجابية</li>
+    </ul>
+
+    <h3>3. الدعم التعليمي:</h3>
+    <ul>
+      <li>مساعدة المعلمين في تخصيص وقت وطرق تدريس مختلفة</li>
+      <li>جلسات تعليمية فردية أو مجموعات دعم</li>
+    </ul>
+
+    <h2>نصائح للأهل والمعلمين</h2>
+    <ul>
+      <li>تحلى بالصبر وابتعد عن العقاب البدني</li>
+      <li>وفر بيئة هادئة ومنظمة</li>
+      <li>شجع الطفل على ممارسة الرياضة</li>
+      <li>قسم المهام الكبيرة إلى خطوات صغيرة</li>
+    </ul>
+
+    <h2>قصص واقعية ملهمة</h2>
+    <p>كثير من الأشخاص المصابين بـ ADHD حققوا نجاحات كبيرة، مثل:</p>
+    <ul>
+      <li>المخترع توماس إديسون</li>
+      <li>السباح مايكل فيلبس</li>
+      <li>الممثل جيم كاري</li>
+    </ul>
+
+    <h2>مراجع ومصادر</h2>
+    <ul>
+      <li><a href="https://www.cdc.gov/ncbddd/adhd/index.html" target="_blank">CDC - معلومات طبية دقيقة</a></li>
+      <li><a href="https://www.chadd.org/" target="_blank">جمعية CHADD الأمريكية</a></li>
+      <li><a href="https://www.who.int/" target="_blank">منظمة الصحة العالمية</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ADHD Awareness Site</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    function switchLanguage(lang) {
+      if (lang === 'en') {
+        document.getElementById('content').style.display = 'block';
+        document.getElementById('content-ar').style.display = 'none';
+        document.getElementById('title').innerText = 'ADHD - Attention Deficit Hyperactivity Disorder';
+      } else {
+        document.getElementById('content').style.display = 'none';
+        document.getElementById('content-ar').style.display = 'block';
+        document.getElementById('title').innerText = 'اضطراب فرط الحركة وتشتت الانتباه';
+      }
+    }
+  </script>
+</body>
+</html>

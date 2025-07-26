@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-element">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADHD Site</title>
+  <meta name="description" content="ADHD Support Site providing tools, tips, and explanations in English and Arabic.">
+  <meta name="keywords" content="ADHD, attention deficit, hyperactivity, mental health, فرط الحركة, تشتت الانتباه">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #000;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav {
+      background: #425f8b;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .nav-links,
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00c8ff;
+      text-decoration: underline;
+    }
+
+    .nav-buttons button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      color: #00c8ff;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    body.dark-mode nav {
+      background: #222;
+    }
+
+    body.dark-mode .nav-buttons button {
+      color: #00c8ff;
+    }
+
+    body[dir="rtl"] {
+      text-align: right;
+    }
+
+    body[dir="ltr"] {
+      text-align: left;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .quiz {
+      background: #758b9c;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    .quiz h3 {
+      margin-top: 0;
+    }
+
+    .quiz button {
+      background: #00c8ff;
+      border: none;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .quiz button:hover {
+      background: #aec2c7;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #00c8ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .media {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .media img,
+    .media iframe {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .media iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-links">
+        <a id="home-link" href="index.html">Home</a>
+        <a id="about-link" href="about.html">About ADHD</a>
+        <a id="todo-link" href="to-do%20list.html">To-Do List</a>
+      </div>
+      <div class="nav-buttons">
+        <button id="lang-toggle" onclick="toggleLanguage()">AR</button>
+        <button onclick="toggleDarkMode()">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <h2 id="adhd-title">Attention Deficit Hyperactivity Disorder (ADHD)</h2>
+      <p id="adhd-desc">
+        Attention-deficit/hyperactivity disorder, also called ADHD, is a long-term condition that affects millions of children. It often continues into adulthood. ADHD includes a mix of ongoing problems. These can include having a hard time paying attention, being hyperactive and being impulsive.
+        <br><br>
+        Children with ADHD also may have low self-esteem and troubled relationships and do poorly in school. Symptoms sometimes lessen with age. Some people never completely outgrow their ADHD symptoms but they can learn strategies to be successful.
+        <br><br>
+        While treatment won't cure ADHD, it can help a great deal with symptoms. Besides giving education about ADHD, treatment can involve medicines and behavior therapies. Early diagnosis and treatment can make a big difference in results.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 id="why-us-title">What distinguishes our site from other sites?</h2>
+      <p id="why-us-desc">
+        ما يميز موقعنا عن غيره هو الأسلوب الفريد في تقديم المعلومات بشكل موثوق وسهل الفهم.<br><br>
+        على عكس العديد من المواقع الأخرى، نحن نركز على الوضوح، تجربة المستخدم، والعناصر التفاعلية التي تجعل الزائر مستمتعًا ومطلعًا في نفس الوقت.<br><br>
+        كما نوفر تجربة ثنائية اللغة (عربية/إنجليزية) لتناسب الجميع.
+      </p>
+    </div>
+
+    <div class="media">
+      <img src="https://images.squarespace-cdn.com/content/v1/5a06eecfedaed8f43db169c4/1585707062605-LT5N65Q8RU3IYWDYYD4E/Parts%2Bof%2Bthe%2Bbrain%2Bdiagram" alt="ADHD Brain Diagram">
+      <iframe src="https://www.youtube.com/embed/5GBMS7WPFSs" title="What is ADHD?" allowfullscreen></iframe>
+    </div>
+
+    <div class="quiz">
+      <h3>Quick ADHD Self-Check</h3>
+      <p>Do you often find it difficult to focus, get distracted easily, or feel restless?</p>
+      <button onclick="alert('This may be a sign of ADHD. Please consult a specialist for a full diagnosis.')">Answer</button>
+    </div>
+
+    <div class="section">
+      <h2>Daily Tips for Managing ADHD</h2>
+      <ul>
+        <li>🕒 Set a consistent daily routine.</li>
+        <li>📋 Use to-do lists and reminders to stay organized.</li>
+        <li>🧘 Practice mindfulness or meditation to improve focus.</li>
+        <li>🎯 Break large tasks into smaller steps.</li>
+        <li>🚶‍♂️ Take short breaks during work or study time.</li>
+        <li>📱 Minimize distractions like phone notifications.</li>
+        <li>💤 Get enough sleep and maintain healthy habits.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Did You Know?</h2>
+      <p>Studies show that ADHD is one of the most common neurodevelopmental disorders in children — affecting up to 9% globally.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> ADHD Support Site | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        home: "Home",
+        about: "About ADHD",
+        todo: "To-Do List",
+        adhdTitle: "Attention Deficit Hyperactivity Disorder (ADHD)",
+        adhdDesc: "ADHD is a condition that affects focus, self-control, and other skills important in daily life...",
+        whyUs: "What distinguishes our site from other sites?",
+        whyUsDesc: "Our site provides simple explanations and interactive tools to help people with ADHD...",
+        dir: "ltr",
+        lang: "en"
+      },
+      ar: {
+        home: "الرئيسية",
+        about: "عن اضطراب ADHD",
+        todo: "قائمة المهام",
+        adhdTitle: "اضطراب فرط الحركة وتشتت الانتباه (ADHD)",
+        adhdDesc: "هو حالة تؤثر على التركيز والتحكم في النفس والمهارات الأخرى المهمة في الحياة اليومية...",
+        whyUs: "ما الذي يميز موقعنا عن المواقع الأخرى؟",
+        whyUsDesc: "يقدم موقعنا شروحات مبسطة وأدوات تفاعلية تساعد المصابين بـ ADHD...",
+        dir: "rtl",
+        lang: "ar"
+      }
+    };
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem("darkMode", isDark);
+    }
+
+    function toggleLanguage() {
+      const currentLang = localStorage.getItem("lang") || "en";
+      const newLang = currentLang === "en" ? "ar" : "en";
+      applyLanguage(newLang);
+      localStorage.setItem("lang", newLang);
+      updateLangButton(newLang);
+    }
+
+    function updateLangButton(lang) {
+      document.getElementById("lang-toggle").textContent = lang === "en" ? "AR" : "EN";
+    }
+
+    function applyLanguage(lang) {
+      const t = translations[lang];
+      document.getElementById("html-element").setAttribute("lang", t.lang);
+      document.getElementById("html-element").setAttribute("dir", t.dir);
+      document.body.setAttribute("dir", t.dir);
+      document.getElementById("home-link").textContent = t.home;
+      document.getElementById("about-link").textContent = t.about;
+      document.getElementById("todo-link").textContent = t.todo;
+      document.getElementById("adhd-title").textContent = t.adhdTitle;
+      document.getElementById("adhd-desc").textContent = t.adhdDesc;
+      document.getElementById("why-us-title").textContent = t.whyUs;
+      document.getElementById("why-us-desc").textContent = t.whyUsDesc;
+    }
+
+    window.onload = function () {
+      const savedDarkMode = localStorage.getItem("darkMode") === "true";
+      if (savedDarkMode) document.body.classList.add("dark-mode");
+
+      const savedLang = localStorage.getItem("lang") || "en";
+      applyLanguage(savedLang);
+      updateLangButton(savedLang);
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    };
+  </script>
+</body>
+
+</html>
